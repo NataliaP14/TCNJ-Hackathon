@@ -9,7 +9,7 @@
         body {
             background: linear-gradient(135deg, #66BBFF, #4682B4);
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             text-align: center;
             padding: 20px;
             margin: 0;
@@ -34,15 +34,32 @@
         .task-item {
             background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
             border-radius: 10px;
-            padding: 10px;
-            margin: 5px;
-            width: 300px;
+            padding: 5px;
+        	margin: 1px;
+            width: 100%;
         }
 
         .task-details {
-            font-size: 1.2em;
-            text-align: left;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        /* Center the text horizontally and vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        height: 100%;
         }
+        .task-details strong {
+    	font-size: 1.2em;
+}
+         pre {
+        font-size: 14px; /* Adjust the font size of <pre> */
+        margin: 0; /* Reset margin */
+    }
+      .task-details div {
+        margin-bottom: 10px; /* Adjust the margin between each label and value */
+    }
     </style>
 </head>
 <body>
@@ -50,9 +67,12 @@
     <ul class="task-list">
         <% for (com.TaskTracker.Task task : (List<com.TaskTracker.Task>) request.getAttribute("tasks")) { %>
             <li class="task-item">
-                <div class="task-details">
-                    <strong>Type:</strong> <%=  task.getType() %> <strong>Name:</strong> <%= task.getName() %> <strong>Due Date:</strong> <%= task.getDueDate() %>
-                </div>
+               <div class="task-details">
+    <strong>Type: </strong> <%= task.getType()  %>---
+    <strong>Name: </strong> <%= task.getName()  %>---
+    <strong>Due Date: </strong> <%= task.getDueDate()  %>
+	</div>
+               
             </li>
         <% } %>
     </ul>
