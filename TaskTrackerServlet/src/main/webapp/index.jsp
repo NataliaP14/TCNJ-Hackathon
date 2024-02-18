@@ -1,9 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Task Tracker</title>
-    <!-- JavaScript function to add task fields -->
+    <!-- javascript function to add task fields -->
     <script>
         function addTaskField() {
             // Get the container element for task fields
@@ -16,16 +17,16 @@
                                          "<input type='text' name='name[]' placeholder='Name'>" +
                                          "<input type='date' name='dueDate[]' placeholder='Due Date'>" +
                                       "</div>";
-            // Append the new div to the container
+            
             container.appendChild(newTaskFields);
         }
     </script>
 </head>
 <body>
     <h1>Task Tracker</h1>
-    <!-- Form to submit task information -->
+    <!-- form to submit task -->
     <form action="TaskTrackerServlet" method="post">
-        <!-- Container for task fields -->
+        <!-- container  -->
         <div id="taskContainer">
             <!-- Default task fields -->
             <div>
@@ -34,10 +35,10 @@
                 <input type="date" name="dueDate[]" placeholder="Due Date">
             </div>
         </div>
-        <!-- Button to dynamically add more task fields -->
+        <!-- add more task fields -->
         <button type="button" onclick="addTaskField()">Add Task</button>
         <br>
-        <!-- Submit button to submit the form -->
+        <!-- submit button-->
         <input type="submit" value="Submit">
     </form>
 </body>
