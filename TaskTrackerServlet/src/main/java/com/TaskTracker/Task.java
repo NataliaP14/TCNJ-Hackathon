@@ -13,7 +13,7 @@ public class Task {
         this.dueDate = dueDate;
     }
 
-    // Getters and setters
+    // Getters and tters
     public String getType() {
         return type;
     }
