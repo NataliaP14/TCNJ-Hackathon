@@ -27,7 +27,7 @@
             text-align: center; /* Center the text */
             font-size: 2.5rem; /* Adjusted font size for better readability */
             margin-bottom: 20px;
-            color: #4682B4; /* Color to match the background gradient */
+            color: #4682B4; /* Color to match the backgroundient */
         }
         .title {
             font-size: 1.2rem; /* Adjusted font size for better readability */
