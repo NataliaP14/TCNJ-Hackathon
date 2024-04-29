@@ -41,7 +41,7 @@ public class TaskTrackerServlet extends HttpServlet {
         request.setAttribute("tasks", tasks);
 
         // forward the request to the result.jsp page for displaying tasks
-        RequestDispatcher view = request.getRequestDispatcher("result.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("SecondPage.jsp");
         view.forward(request, response);
     }
 }
