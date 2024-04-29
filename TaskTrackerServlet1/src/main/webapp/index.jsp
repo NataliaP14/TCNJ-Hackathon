@@ -18,7 +18,7 @@
         .container {
             width: 90%; /* Adjusted width for better responsiveness */
             max-width: 600px; /* Set max-width to prevent container from becoming too wide */
-            background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background for better readability */
+            background: rgba(255, 255, 255, 0.95); /* Semi-trat white background for better readability */
             border-radius: 20px; /* Rounded corners for a softer look */
             padding: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
